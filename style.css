@@ -1,0 +1,98 @@
+* {
+    overflow-x: hidden;
+}
+
+/* Reset de margens e preenchimentos para limpar a aparência padrão */
+body, h1, form, fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o corpo do documento */
+body {
+    font-family: Arial, sans-serif; /* Escolha uma fonte adequada */
+    background-color: #f0f0f0; /* Cor de fundo */
+    padding: 40px; /* Espaçamento ao redor do conteúdo */
+}
+
+/* Estilos para o cabeçalho */
+h1 {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 60px; /* Espaçamento inferior */
+}
+
+/* Estilos para o formulário */
+form {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    background-color: #fff; /* Cor de fundo do formulário */
+    padding: 20px; /* Espaçamento interno do formulário */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para os campos do formulário */
+fieldset {
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+legend {
+    font-weight: bold; /* Deixa o texto do título em negrito */
+}
+
+label {
+    display: block; /* Mostra os rótulos em uma nova linha */
+    margin-bottom: 5px; /* Espaçamento inferior */
+}
+
+input[type="text"],
+select {
+    width: 100%; /* Largura total */
+    padding: 8px; /* Preenchimento interno */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Borda arredondada */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px; /* Espaçamento à direita */
+}
+
+button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Preenchimento interno */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de mão ao passar */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: flex-start; /* Alinha os elementos no topo */
+}
+
+.form-container {
+    width: 48%; /* Largura ajustável conforme necessário */
+}
+
+.dados-cadastrados {
+    width: 48%; /* Largura ajustável conforme necessário */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Muda para layout de coluna em telas menores */
+        align-items: center; /* Alinha os elementos ao centro em telas menores */
+    }
+
+    .form-container, .dados-cadastrados {
+        width: 100%; /* Largura total em telas menores */
+    }
+}

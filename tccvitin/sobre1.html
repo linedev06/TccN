@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agiliza - Sobre Nós</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            background-color: #61788C;
+            color: #fff;
+        }
+
+        .navbar img {
+            width: 80px;
+        }
+
+        .nav-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 100px;
+            flex: 1;
+        }
+
+        #icones a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            align-items: center;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        #icones a:hover {
+            color: #0056b3;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: 50px;
+            width: 150px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+
+            .nav-center {
+                margin-left: 0;
+                margin-top: 10px;
+                flex-direction: column;
+            }
+
+            #icones a {
+                margin: 10px 0;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar {
+                padding: 10px 10px;
+            }
+
+            .navbar img {
+                width: 60px;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar opacity" id="navbar">
+        <a href="index.html">
+            <div><img src="img/Image-removebg-preview.png" alt=""></div>
+        </a>
+        <div class="nav-center" id="icones">
+            <a id="home" href="index.html">Home</a>
+            <a id="sobre" href="sobre1.html">Sobre</a>
+        </div>
+        <a href="login.html">
+            <button class="btn">Login</button>
+        </a>
+    </div>
+    <div style="height: 30px;"></div>
+    <div class="container">
+        <div class="content animate__animated animate__fadeIn">
+            <h1>Sobre Nós</h1>
+            <p>O Agiliza é uma empresa dedicada a fornecer soluções rápidas e eficientes para nossos clientes.</p>
+            <p>Nossa missão é facilitar o acesso a serviços de qualidade, garantindo satisfação e eficiência.</p>
+
+            <h2>Nossa Missão</h2>
+            <p>Desenvolver um sistema pró-ativo que atenda às necessidades dos nossos clientes de maneira eficiente e personalizada. Buscamos constantemente antecipar demandas, fornecer soluções práticas e garantir que nossos usuários tenham uma experiência simplificada e satisfatória.</p>
+
+            <h2>Nossa Visão</h2>
+            <p>Ser reconhecidos como a solução mais confiável e eficaz no mercado. Queremos nos destacar pela excelência em nossos serviços, pela qualidade do nosso atendimento e pela capacidade de entregar resultados que superem as expectativas. Acreditamos que um sistema confiável é a chave para construir relações duradouras com nossos clientes.</p>
+
+            <h2>Nossos Valores</h2>
+            <ul>
+                <li><strong>Inovação Constante</strong>: Valorizamos a inovação em todos os aspectos do nosso trabalho. Estamos sempre buscando novas maneiras de melhorar nossos serviços, incorporar tecnologias de ponta e encontrar soluções criativas para os desafios dos nossos clientes.</li>
+                <li><strong>Proatividade</strong>: Nos esforçamos para estar sempre à frente, antecipando as necessidades dos nossos clientes e propondo soluções antes mesmo que os problemas surjam.</li>
+                <li><strong>Confiabilidade</strong>: Construímos confiança por meio da transparência, consistência e entrega de resultados de alta qualidade. Nossos clientes podem contar conosco para cumprir nossas promessas e superar suas expectativas.</li>
+                <li><strong>Eficiência</strong>: Valorizamos a eficiência em nossos processos para garantir que nossos serviços sejam rápidos e eficazes, sem comprometer a qualidade.</li>
+                <li><strong>Orientação ao Cliente</strong>: Colocamos nossos clientes no centro de tudo o que fazemos. Nosso objetivo é entender suas necessidades únicas e fornecer soluções que realmente façam a diferença em suas vidas.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+    <div>
+                <h3>Contato</h3>
+                <p>Email: contato@agiliza.com.br</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div>
+                <h3>Siga-nos</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div>
+                <h3>&copy; 2024 Agiliza</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
