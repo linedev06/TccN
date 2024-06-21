@@ -97,7 +97,7 @@
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
                 <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf" placeholder="Insira seu CPF" required>
+                <input type="text" id="cpf" name="cpf" maxlength="11" placeholder="Insira seu CPF" required>
                 <label for="rg">RG:</label>
                 <input type="text" id="rg" name="rg" placeholder="Insira seu RG" required>
                 <label for="dt_nasc">Data de Nascimento:</label>
@@ -119,7 +119,7 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Insira seu email" required>
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="Insira seu telefone" required>
+                <input type="tel" id="telefone" name="telefone" maxlength="11" placeholder="Insira seu telefone" required>
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" placeholder="Insira sua senha" required>
             </fieldset>
