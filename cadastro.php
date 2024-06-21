@@ -94,7 +94,7 @@
         <form id="userRegistrationForm" action="cad_usuario.php" method="post" enctype="multipart/form-data">
             <fieldset>
                 <legend>Informações Pessoais</legend>
-                <label for="nome">Nome:</label>
+                <label for="nome">Nome completo:</label>
                 <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
                 <label for="cpf">CPF:</label>
                 <input type="text" id="cpf" name="cpf" maxlength="11" placeholder="Insira seu CPF" required>
