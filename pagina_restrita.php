@@ -42,32 +42,24 @@ if (isset($_POST['logout'])) {
             padding: 0;
         }
         .navbar {
-    background-color: #0074d9; /* Azul brilhante */
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 20px; /* Ajuste conforme necessário para mover a navbar para a direita */
-}
-
-.navbar img {
-    max-width: 100px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    margin-right: 10px; /* Diminuiu o espaço entre os links */
-}
-
-.navbar a:last-child {
-    margin-right: 0; /* Remove o margin-right do último link */
-}
-
-.navbar a:hover {
-    text-decoration: underline;
-}
+            background-color: #0074d9; /* Azul brilhante */
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar img {
+            max-width: 100px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
         #conteudo1 {
             background-color: white;
             padding: 50px;
