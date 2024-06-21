@@ -60,7 +60,8 @@ if (!empty($_POST['nome']) && !empty($_POST['cpf']) && !empty($_POST['rg']) && !
         );
 
         $pdo->commit();
-        header("Location: pagina_restrita.php"); 
+        
+        header("Location: index.php"); 
         exit();
     } catch (PDOException $e) {
         $pdo->rollBack();
