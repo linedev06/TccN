@@ -108,7 +108,7 @@ if (!$usuario) {
         <a href="pagina_restrita.php">Home</a>
         <a href="sobre.php">Sobre</a>
         <form method="post" action="">
-            <button type="submit" name="logout">Logout</button>
+            
         </form>
         <a href="perfil.php"><img src="img/perfil_2.png" alt="Perfil" style="width:50px;"></a>
     </div>
