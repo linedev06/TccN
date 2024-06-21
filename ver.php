@@ -28,7 +28,7 @@ if (!$usuario) {
 
 include 'conecta.php';
 
-$stmt = $pdo->query("SELECT * FROM frm_cadastro WHERE id_cadastro = $cod");
+$stmt = $pdo->query("SELECT * FROM frm_cadastro");
 $dados = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
