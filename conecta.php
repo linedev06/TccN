@@ -1,8 +1,8 @@
 <?php
 
-$dsn = 'mysql:host=localhost;dbname=bd_site';
-$username = 'root';
-$password = 'root';
+$dsn = 'mysql:host=agilizabanco.mysql.database.azure.com;dbname=bd_site';
+$username = 'Ricardo';
+$password = 'Arcanjo6669';
 
 try {
     $pdo = new PDO($dsn, $username, $password);
