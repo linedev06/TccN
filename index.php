@@ -138,16 +138,25 @@ if (!empty($_POST['email']) && !empty($_POST['senha'])) {
             height: 200px;
         }
 
-        @media (max-width: 400px) and (max-height: 876px) {
-            img {
-                display: none;
-            }
-        }  
-     @media (min-height: 876px) {
-            img {
-                display: flex;
-            }
-        }  
+        @media (max-height: 876px) {
+    img {
+        display: none;
+    }
+}
+
+
+@media (max-width: 400px) {
+    img {
+        display: none;
+    }
+}
+
+
+@media (min-width: 401px) and (min-height: 877px) {
+    img {
+        display: flex;
+    }
+}
 
     </style>
 </head>
