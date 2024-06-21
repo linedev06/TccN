@@ -122,7 +122,6 @@ if (!empty($_POST['email']) && !empty($_POST['senha'])) {
         }
 
         img{
-            display: flex;
             width: 500px;
             height: 500px;
             margin-top: 20px;
@@ -142,6 +141,11 @@ if (!empty($_POST['email']) && !empty($_POST['senha'])) {
         @media (max-width: 400px) and (max-height: 876px) {
             img {
                 display: none;
+            }
+        }  
+     @media (min-height: 876px) {
+            img {
+                display: flex;
             }
         }  
 
