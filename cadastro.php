@@ -102,7 +102,7 @@
                 <input type="text" id="rg" name="rg" maxlength="9" placeholder="Insira seu RG" required>
                 <label for="dt_nasc">Data de Nascimento:</label>
                 <input type="date" id="dt_nasc" name="dt_nasc" required>
-                <label for="imagem">Imagem de Perfil:</label>
+                <label for="imagem">Imagem de Perfil (opicional):</label>
                 <input type="file" id="imagem" name="imagem" accept="image/*">
             </fieldset>
             <fieldset>
