@@ -139,6 +139,11 @@ if (!empty($_POST['email']) && !empty($_POST['senha'])) {
             height: 200px;
         }
 
+        @midia (max-width: 400px) and (max-height: 876px) {
+            img {
+                display: none;
+            }
+        }  
 
     </style>
 </head>
