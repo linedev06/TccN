@@ -118,12 +118,12 @@ if (!$usuario) {
         <form id="userRegistrationForm" action="cad_form.php" method="post">
             <fieldset>
                 <legend>Informações Pessoais</legend>
-                <label for="nome">Nome:</label>
+                <label for="nome">Nome completo:</label>
                 <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
                 <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf" placeholder="Insira seu CPF" required>
+                <input type="text" id="cpf" name="cpf" maxlength="11" placeholder="Insira seu CPF" required>
                 <label for="rg">RG:</label>
-                <input type="text" id="rg" name="rg" placeholder="Insira seu RG" required>
+                <input type="text" id="rg" name="rg" maxlength="9" placeholder="Insira seu RG" required>
                 <label for="dt_nasc">Data de Nascimento:</label>
                 <input type="date" id="dt_nasc" name="dt_nasc" required>
             </fieldset>
