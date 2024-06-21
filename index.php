@@ -140,22 +140,15 @@ if (!empty($_POST['email']) && !empty($_POST['senha'])) {
 
         
 @media (max-height: 876px), (max-width: 400px) {
-    img {
+    #lado {
         display: none;
     }
 }
 
-
+/* Mostrar a imagem em telas maiores que 876px de altura e 400px de largura */
 @media (min-width: 401px) and (min-height: 877px) {
-    img {
-        display: block; 
-    }
-}
-
-
-@media (min-width: 401px) and (min-height: 877px) {
-    img {
-        display: flex;
+    #lado {
+        display: block; /* ou flex, conforme necessário */
     }
 }
 
@@ -180,7 +173,7 @@ if (!empty($_POST['email']) && !empty($_POST['senha'])) {
         <p>Não tem uma conta? <a href="cadastro.php">Cadastrar-se</a></p>
     </div>
 
-    <img src="./svg/login-animate.svg" alt="My Happy SVG"/>
+   <img id="lado" src="./svg/login-animate.svg" alt="My Happy SVG"/>
     
 </body>
 </html>
