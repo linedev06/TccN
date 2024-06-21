@@ -138,7 +138,14 @@ if (!empty($_POST['email']) && !empty($_POST['senha'])) {
             height: 200px;
         }
 
-@media (max-height: 876px), (max-width: 400px) {
+@media (max-width: 400px) {
+    #lado {
+        display: none;
+    }
+}
+
+/* Esconder a imagem em telas de até 876px de altura */
+@media (max-height: 876px) {
     #lado {
         display: none;
     }
@@ -155,6 +162,7 @@ if (!empty($_POST['email']) && !empty($_POST['senha'])) {
 #lado {
     display: block; /* ou flex, conforme necessário */
 }
+
     </style>
 </head>
 <body>
