@@ -118,7 +118,7 @@ if (!$usuario) {
             <p><strong>Nome:</strong> <?= htmlspecialchars($usuario['nm_nome']) ?></p>
             <p><strong>CPF:</strong> <?= htmlspecialchars($usuario['nr_cpf']) ?></p>
             <p><strong>RG:</strong> <?= htmlspecialchars($usuario['nr_rg']) ?></p>
-            <p><strong>Data de Nascimento:</strong> <?= htmlspecialchars($usuario['dt_nasc']) ?></p>
+            <p><strong>Data de nascimento:</strong> <?= htmlspecialchars($usuario['dt_nasc']) ?></p>
             <p><strong>Endereço:</strong> <?= htmlspecialchars($usuario['nm_endereco']) ?></p>
             <p><strong>Bairro:</strong> <?= htmlspecialchars($usuario['nm_bairro']) ?></p>
             <p><strong>Cidade:</strong> <?= htmlspecialchars($usuario['nm_cidade']) ?></p>
