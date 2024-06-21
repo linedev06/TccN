@@ -138,20 +138,23 @@ if (!empty($_POST['email']) && !empty($_POST['senha'])) {
             height: 200px;
         }
 
-        
 @media (max-height: 876px), (max-width: 400px) {
     #lado {
         display: none;
     }
 }
 
-/* Mostrar a imagem em telas maiores que 876px de altura e 400px de largura */
+/* Mostrar a imagem em telas maiores que 400px de largura e 876px de altura */
 @media (min-width: 401px) and (min-height: 877px) {
     #lado {
         display: block; /* ou flex, conforme necessário */
     }
 }
 
+/* Padrão para garantir que a imagem seja exibida por padrão */
+#lado {
+    display: block; /* ou flex, conforme necessário */
+}
     </style>
 </head>
 <body>
