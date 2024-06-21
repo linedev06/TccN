@@ -23,7 +23,7 @@ if (isset($_POST['id_cadastro'])) {
         $html .= '<p><strong>Nome:</strong> ' . $dado['nm_nome'] . '</p>';
         $html .= '<p><strong>CPF:</strong> ' . $dado['nr_cpf'] . '</p>';
         $html .= '<p><strong>RG:</strong> ' . $dado['nr_rg'] . '</p>';
-        $html .= '<p><strong>Data de nascimento:</strong> ' . $dado['dt_nasc'] . '</p>';
+        $html .= '<p><strong>Data de Nascimento:</strong> ' . $dado['dt_nasc'] . '</p>';
 
         // Escreve o conteúdo HTML no PDF
         $pdf->writeHTML($html, true, false, true, false, '');
