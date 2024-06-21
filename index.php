@@ -125,7 +125,7 @@ if (!empty($_POST['email']) && !empty($_POST['senha'])) {
             display: flex;
             width: 500px;
             height: 500px;
-            margin-top: 20px;
+            margin-top: 200px;
         }
 
         .logo{
