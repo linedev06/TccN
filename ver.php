@@ -2,7 +2,7 @@
 session_start();
 
 // verificando a sessão meu mano vitor
-if (!isset($_SESSION['usuario']) || !isset($_SESSION['usuario']['id_paciente'])) {
+if (!isset($_SESSION['usuario'])) {
     // se nao tiver logado, pagina de login
     header("Location: index.php");
     exit; // sair
@@ -10,10 +10,13 @@ if (!isset($_SESSION['usuario']) || !isset($_SESSION['usuario']['id_paciente']))
 
 include 'conecta.php';
 
-$id_paciente = $_SESSION['usuario']['id_paciente'];
+if(isset($_SESSION['usuario'])) {
+    $cod = $_SESSION['usuario'];
+  }
+
 
 $stmt = $pdo->prepare("SELECT * FROM tb_paciente WHERE id_paciente = :id_paciente");
-$stmt->bindParam(':id_paciente', $id_paciente);
+$stmt->bindParam(':id_paciente', $cod);
 $stmt->execute();
 $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -25,7 +28,7 @@ if (!$usuario) {
 
 include 'conecta.php';
 
-$stmt = $pdo->query("SELECT * FROM frm_cadastro");
+$stmt = $pdo->query("SELECT * FROM frm_cadastro WHERE id_cadastro = $cod");
 $dados = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
@@ -162,7 +165,7 @@ $dados = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 if (stripos($nome, $pesquisa) !== false || stripos($cpf, $pesquisa) !== false || stripos($rg, $pesquisa) !== false):
             ?>
                 <div class="dados">
-                    <p><strong>Nome:</strong> <?php echo $nome; ?></p>
+                    <p><strong>Nome:</strong> <?php echo "$nome"; ?></p>
                     <p><strong>CPF:</strong> <?php echo $cpf; ?></p>
                     <p><strong>RG:</strong> <?php echo $rg; ?></p>
                     <p><strong>Data de Nascimento:</strong> <?php echo $dado['dt_nasc']; ?></p>

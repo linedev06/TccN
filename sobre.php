@@ -3,7 +3,7 @@
 session_start();
 
 // verificando a sessão meu mano vitor
-if (!isset($_SESSION['usuario']) || !isset($_SESSION['usuario']['id_paciente'])) {
+if (!isset($_SESSION['usuario'])) {
     // se nao tiver logado, pagina de login
     header("Location: index.php");
     exit; // sair
@@ -11,7 +11,7 @@ if (!isset($_SESSION['usuario']) || !isset($_SESSION['usuario']['id_paciente']))
 
 include 'conecta.php';
 
-$id_paciente = $_SESSION['usuario']['id_paciente'];
+$id_paciente = $_SESSION['usuario'];
 
 $stmt = $pdo->prepare("SELECT * FROM tb_paciente WHERE id_paciente = :id_paciente");
 $stmt->bindParam(':id_paciente', $id_paciente);

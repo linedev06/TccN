@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include 'conecta.php';
 
 $error_message = ""; // Inicializa a mensagem de erro como vazia
@@ -15,7 +15,8 @@ if (!empty($_POST['email']) && !empty($_POST['senha'])) {
     $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($usuario) {
-        $_SESSION['usuario'] = $usuario; // aq é conexao com a sessão
+        session_start();
+        $_SESSION['usuario'] = $usuario['id_paciente']; // aq é conexao com a sessão
         header("Location: pagina_restrita.php"); 
         exit();
     } else {

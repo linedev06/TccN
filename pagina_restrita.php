@@ -1,8 +1,7 @@
 <?php
-session_start(); // Iniciar a sessão
-
+session_start();
 // Verificar se o usuário está logado
-if (!isset($_SESSION['usuario']) || !isset($_SESSION['usuario']['nm_nome'])) {
+if (!isset($_SESSION['usuario'])) {
     // Se o usuário não estiver logado, redirecioná-lo para a página de login
     header("Location: index.php");
     exit; // Certifique-se de sair após o redirecionamento
@@ -109,6 +108,9 @@ if (isset($_POST['logout'])) {
     </style>
 </head>
 <body>
+<?php if(isset($_SESSION['usuario'])) {
+           $cod = $_SESSION['usuario'];
+         }?>
     <div class="navbar">
         <img src="Image-removebg-preview.png" alt="Logo Agiliza">
         <a href="pagina_restrita.php">Home</a>
